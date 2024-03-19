@@ -6,6 +6,10 @@
     <title>hello</title>
 </head>
 <body>
-    <h3>hello user ...</h3>
+    {% if name == admin  %}
+    <h3>hello {{name}} ...</h3>
+    {% else %}
+    <h3>you ar not admin ... </h3>
+    {% endif %}
 </body>
 </html>
