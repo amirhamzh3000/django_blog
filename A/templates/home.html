@@ -4,13 +4,12 @@
 {% block title %}home{% endblock %}
 
 {% block content %} 
-    <h1>welcome to my website ...</h1>
-
          {% for todo in todos %}
-         <hr>
-        <h3>{{todo.title}} </h3>
-        <small>{{ todo.created }}</small>
-        <p>{{ todo.body }}</p>
-        <hr>
+         <div class="card-header">
+          <h3>{{todo.title}}</h3>  
+          </div>
+          <p class="card-title"> {{ todo.body }}</p>
+
+        <small class="card-text">{{ todo.created }}</small>
         {%endfor%}
         {% endblock %}
