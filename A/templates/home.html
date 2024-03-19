@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+
+{% block title %}home{% endblock %}
+
+{% block content %} 
     <h1>welcome to my website ...</h1>
 
          {% for todo in todos %}
@@ -15,7 +13,4 @@
         <p>{{ todo.body }}</p>
         <hr>
         {%endfor%}
-
-
-</body>
-</html>
+        {% endblock %}

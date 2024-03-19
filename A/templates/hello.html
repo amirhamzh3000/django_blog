@@ -1,15 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hello</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block title %}hello{% endblock %}
+
+
+{% block content %} 
     {% if name == admin  %}
     <h3>hello {{name}} ...</h3>
     {% else %}
     <h3>you ar not admin ... </h3>
     {% endif %}
-</body>
-</html>
+    {% endblock %}
