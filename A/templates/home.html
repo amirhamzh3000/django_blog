@@ -6,10 +6,8 @@
 {% block content %} 
          {% for todo in todos %}
          <div class="card-header">
-          <h3>{{todo.title}}</h3>  
+          <a href="detail/{{todo.id}}">{{todo.title}}</a>  
           </div>
-          <p class="card-title"> {{ todo.body }}</p>
-
-        <small class="card-text">{{ todo.created }}</small>
+        
         {%endfor%}
         {% endblock %}
